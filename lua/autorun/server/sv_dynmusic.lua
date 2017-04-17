@@ -4,7 +4,7 @@ util.AddNetworkString("dynmusic")
 if dynamicMusic["fightPerformance"] then
 	dynamicMusic["targetTable"] = {}
 	hook.Add("EntityTakeDamage", "dynamicMusic", function(target, damageInfo)
-		if target:IsPlayer() and damageInfo:GetAttacker():IsValid() and damageInfo:GetAttacker():IsNPC() then
+		if target:IsPlayer() and damageInfo:GetAttacker():IsNPC() then
 			dynamicMusic["targetTable"][target] = dynamicMusic["targetTable"][target] or {}
 			dynamicMusic["targetTable"][target][damageInfo:GetAttacker()] = true
 		end

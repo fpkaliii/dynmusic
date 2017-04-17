@@ -1,5 +1,4 @@
 // CONFIG \\
-
 dynamicMusic = { // i suggest uploading files to your own webserver for the music links
 	ambientMusic = { // ambient music url(s) -- played when not in combat/darkness, must be a direct link to mp3/wav/etc.
 		"https://a.pomf.cat/zjjyzd.mp3",
