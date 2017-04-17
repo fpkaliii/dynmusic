@@ -1,4 +1,7 @@
 include("dynmusic_config.lua")
+dynamicMusic["darknessValue"] = 0.0003
+dynamicMusic["enabledCvar"] = CreateClientConVar("dynamicmusic_enabled", 1)
+dynamicMusic["volumeCvar"] = CreateClientConVar("dynamicmusic_volume", 100)
 local me = LocalPlayer()
 local darkChannel = nil
 local lightChannel = nil
