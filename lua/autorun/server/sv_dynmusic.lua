@@ -1,5 +1,7 @@
 AddCSLuaFile("dynmusic_config.lua")
+AddCSLuaFile("dynmusic_menu.lua")
 include("dynmusic_config.lua")
+include("dynmusic_menu.lua")
 util.AddNetworkString("dynmusic")
 if dynamicMusic["fightPerformance"] then
 	dynamicMusic["targetTable"] = {}
